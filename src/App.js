@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import logoImg from './images/running-man.svg';
+import Logo from './components/LogoElement';
+import Login from './components/Login';
+import AdSpace from './components/AdSpace';
+import Timer from './components/Timer';
+import Records from './components/Records';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <img src={logoImg} alt="Running Man" />
+      <Logo />
+      <Login />
+      <AdSpace />
+      <Timer />
+      <Records />
+    </div >
   );
 }
 
