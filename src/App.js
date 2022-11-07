@@ -16,7 +16,7 @@ function App() {
   const [holdBtnTimer, setHoldBtnTimer] = useState(0);
 
   useEffect(() => {
-    if (holdBtnDown && holdBtnTimer < 15) {
+    if (holdBtnDown && holdBtnTimer < 5) {
       const timer = setInterval(() => {
         setHoldBtnTimer(holdBtnTimer + 1);
       }, 1000)
@@ -27,6 +27,8 @@ function App() {
   useEffect(() => {
     if (holdBtnTimer === 5) {
       setPage(2);
+      setHoldBtnDown(false);
+      setHoldBtnTimer(0);
     }
   })
   //timer code

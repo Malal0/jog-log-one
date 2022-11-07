@@ -38,9 +38,9 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
                     <hr />
                 </div>
                 <ul>
-                    <li><a href='#' target='_blank'>f</a></li>
-                    <li><a href='#' target='_blank'>t</a></li>
-                    <li><a href='#' target='_blank'>g</a></li>
+                    <li><a href='https://www.facebook.com/' target='_blank' rel="noreferrer">f</a></li>
+                    <li><a href='https://twitter.com/' target='_blank' rel="noreferrer">t</a></li>
+                    <li><a href='https://www.google.com/' target='_blank' rel="noreferrer">g</a></li>
                 </ul>
             </div>
             <div>

@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react"
 export default function Timer({ handleMouseDown, handleMouseUp, holdBtnTime }) {
     const [mainTimer, setMainTimer] = useState({ min: 0, sec: 0 });
     const [timerOn, setTimerOn] = useState(false);
-    // const [holdBtnDown, setHoldBtnDown] = useState(false);
-    // const [holdBtnTimer, setHoldBtnTimer] = useState(0);
 
     useEffect(() => {
         if (timerOn) {
@@ -19,15 +17,6 @@ export default function Timer({ handleMouseDown, handleMouseUp, holdBtnTime }) {
         }
     });
 
-    // useEffect(() => {
-    //     if (holdBtnDown && holdBtnTimer < 15) {
-    //         const timer = setInterval(() => {
-    //             setHoldBtnTimer(holdBtnTimer + 1);
-    //         }, 1000)
-    //         return () => clearInterval(timer)
-    //     }
-    // });
-
     return (
         <>
             <h2>minutes</h2>
@@ -39,18 +28,8 @@ export default function Timer({ handleMouseDown, handleMouseUp, holdBtnTime }) {
             </h1>
             <button
                 onClick={() => setTimerOn(!timerOn)}
-                // onMouseDown={() => setHoldBtnDown(true)}
                 onMouseDown={handleMouseDown}
-                // {() => {
-                //     setHoldBtnDown(true)
-                //     continueNextPage()
-                // }
-                // }
                 onMouseUp={handleMouseUp}
-            // {() => {
-            //     setHoldBtnDown(false)
-            //     setHoldBtnTimer(0)
-            // }}
             >| |</button>
             <p>press here</p>
             <h1>
