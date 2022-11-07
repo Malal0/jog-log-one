@@ -23,6 +23,12 @@ function App() {
       return () => clearInterval(timer)
     }
   });
+
+  useEffect(() => {
+    if (holdBtnTimer === 5) {
+      setPage(2);
+    }
+  })
   //timer code
 
   return (
