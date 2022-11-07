@@ -30,7 +30,7 @@ function App() {
       setHoldBtnDown(false);
       setHoldBtnTimer(0);
     }
-  })
+  }, [holdBtnTimer])
   //timer code
 
   return (
