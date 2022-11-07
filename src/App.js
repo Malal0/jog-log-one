@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import logoImg from './images/running-man.svg';
 import Logo from './components/LogoElement';
 import Login from './components/Login';
@@ -10,6 +10,20 @@ import './App.css';
 function App() {
   const [page, setPage] = useState(0); //for now i want 3 pages... 0,1,2
   const [loginState, setLoginState] = useState(true); //the state of the login form
+
+  // timer code
+  const [holdBtnDown, setHoldBtnDown] = useState(false);
+  const [holdBtnTimer, setHoldBtnTimer] = useState(0);
+
+  useEffect(() => {
+    if (holdBtnDown && holdBtnTimer < 15) {
+      const timer = setInterval(() => {
+        setHoldBtnTimer(holdBtnTimer + 1);
+      }, 1000)
+      return () => clearInterval(timer)
+    }
+  });
+  //timer code
 
   return (
     <div className="App">
@@ -28,12 +42,17 @@ function App() {
         page === 1 ?
           <>
             <Logo />
-            <Timer />
+            <Timer
+              handleMouseDown={() => { setHoldBtnDown(true) }}
+              handleMouseUp={() => { setHoldBtnDown(false); setHoldBtnTimer(0) }}
+              holdBtnTime={holdBtnTimer}
+            />
             <Records />
           </>
           :
           <>
             <Logo />
+            <button onClick={() => setPage(1)}>home</button>
             <Timer />
           </>
       }
