@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import logoImg from './images/running-man.svg';
 import Logo from './components/LogoElement';
 import Login from './components/Login';
 import AdSpace from './components/AdSpace';
@@ -32,10 +31,12 @@ function App() {
     }
   }, [holdBtnTimer])
   //timer code
+  const progressStyle = {
+    width: holdBtnTimer * 20 + '%'
+  }
 
   return (
     <div className="App">
-      <img src={logoImg} alt="Running Man" />
       {page === 0 ?
         <>
           <Login
@@ -54,6 +55,7 @@ function App() {
               handleMouseDown={() => { setHoldBtnDown(true) }}
               handleMouseUp={() => { setHoldBtnDown(false); setHoldBtnTimer(0) }}
               holdBtnTime={holdBtnTimer}
+              handleStyle={progressStyle}
             />
             <Records />
           </>

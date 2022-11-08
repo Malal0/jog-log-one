@@ -1,0 +1,13 @@
+.adspace {
+    border: 1px solid blue;
+    display: grid;
+    place-items: center;
+    height: 73px;
+    width: calc(100% - 2em);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 1em;
+    mix-blend-mode: difference;
+}

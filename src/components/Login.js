@@ -1,13 +1,21 @@
+import '../CSS/login.css'
+
 export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
 
     const loginForm = (<>
         <form>
-            <label for='emailOrUsername'>email or username</label>
-            <input id='emailOrUsername' type='text'></input>
-            <label for='password'>password</label>
-            <input id='password' type='text'></input>
-            <input id='loggedInCheckbox' type='checkbox'></input>
-            <label for='loggedInCheckbox'>stay logged in</label>
+            <div>
+                <label for='emailOrUsername'>email or username</label>
+                <input id='emailOrUsername' type='text'></input>
+            </div>
+            <div>
+                <label for='password'>password</label>
+                <input id='password' type='text'></input>
+            </div>
+            <div>
+                <input id='loggedInCheckbox' type='checkbox'></input>
+                <label for='loggedInCheckbox'>stay logged in</label>
+            </div>
         </form>
     </>);
 
@@ -27,12 +35,12 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
     </>);
 
     return (
-        <>
-            <div>
+        <div className='login'>
+            <div className="form-container">
                 {form ?
                     <>{loginForm}</> : <>{signUpForm}</>
                 }
-                <div>
+                <div className='or-container'>
                     <hr />
                     <p>or</p>
                     <hr />
@@ -43,12 +51,12 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
                     <li><a href='https://www.google.com/' target='_blank' rel="noreferrer">g</a></li>
                 </ul>
             </div>
-            <div>
+            <div className='login-tab-container'>
                 <button onClick={logInTab}>login</button>
                 <button onClick={signUpTab}>sign up</button>
             </div>
             <button onClick={continueNextPage}>continue as a guest</button>
-        </>
+        </div>
     )
 
 }
