@@ -5,7 +5,7 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
     const loginForm = (<>
         <form>
             <div>
-                <label for='emailOrUsername'>email or username</label>
+                <label for='emailOrUsername'>email <span className='subtext'>or</span> username</label>
                 <input id='emailOrUsername' type='text'></input>
             </div>
             <div>
@@ -23,9 +23,9 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
         <form>
             <label for='username'>username</label>
             <input id='username' type='text'></input>
-            <label for='firstname'>first name</label>
+            <label for='firstname'>first name <span className='subtext'>(optional)</span></label>
             <input id='firstname' type='text'></input>
-            <label for='lastname'>last name</label>
+            <label for='lastname'>last name <span className='subtext'>(optional)</span></label>
             <input id='lastname' type='text'></input>
             <label for='email'>email</label>
             <input id='email' type='text'></input>
@@ -53,7 +53,7 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
             </div>
             <div className='login-tab-container'>
                 <button onClick={logInTab}>login</button>
-                <button onClick={signUpTab}>sign up</button>
+                <button className='active' onClick={signUpTab}>sign up</button>
             </div>
             <button className='centered-btn' onClick={continueNextPage}>continue as a guest</button>
         </div>

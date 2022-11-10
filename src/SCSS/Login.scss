@@ -17,12 +17,18 @@
             display: block;
             width: 100%;
         }
+
+        .subtext {
+            text-transform: lowercase;
+            opacity: .6;
+        }
     }
 
 
     button {
         color: $mainColor;
-        background-color: hsl(0, 0%, 8%);
+        // background-color: hsl(0, 0%, 8%);
+        background-color: transparent;
         padding-block: 1em;
         text-transform: uppercase;
         font-family: inherit;
@@ -82,6 +88,15 @@
     .login-tab-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        .active {
+            background-color: hsl(0, 0%, 8%);
+
+            &:hover {
+                background-color: hsl(0, 0%, 6%);
+                color: hsl(227, 100%, 85%);
+            }
+        }
     }
 
     .centered-btn {
