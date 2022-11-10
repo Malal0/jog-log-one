@@ -55,7 +55,7 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
                 <button onClick={logInTab}>login</button>
                 <button onClick={signUpTab}>sign up</button>
             </div>
-            <button onClick={continueNextPage}>continue as a guest</button>
+            <button className='centered-btn' onClick={continueNextPage}>continue as a guest</button>
         </div>
     )
 

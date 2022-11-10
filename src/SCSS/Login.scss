@@ -5,9 +5,10 @@
     font-weight: 300;
     width: calc(100% - 2em);
     margin: 70px 1em;
+    display: grid;
 
     form {
-        color: #000000;
+        color: $mainBgColor;
 
         label {
             color: $mainColor;
@@ -22,7 +23,7 @@
 
     button {
         color: $mainColor;
-        background-color: $mainBgColor;
+        background-color: hsl(0, 0%, 8%);
         padding-block: 1em;
         text-transform: uppercase;
         font-family: inherit;
@@ -30,6 +31,10 @@
         border-radius: 0;
         outline: none;
         border: none;
+
+        &:hover {
+            background-color: hsl(0, 0%, 6%);
+        }
     }
 
     .form-container {
@@ -67,5 +72,12 @@
     .login-tab-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .centered-btn {
+        width: fit-content;
+        background-color: transparent;
+        border: 1px solid white;
+        margin: auto;
     }
 }
