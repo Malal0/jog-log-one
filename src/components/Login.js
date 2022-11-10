@@ -4,13 +4,14 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage, han
 
     const loginForm = (<>
         <form>
-            <div>
-                <label for='emailOrUsername'>email <span className='subtext'>or</span> username</label>
+            <label for='emailOrUsername'>email <span className='subtext'>or</span> username</label>
+            <div className='input-container'>
                 <input id='emailOrUsername' type='text'></input>
             </div>
-            <div>
-                <label for='password'>password</label>
+            <label for='password'>password</label>
+            <div className='password-grid'>
                 <input id='password' type='text'></input>
+                <img src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fpng-file-name-real-eye-1000.png&f=1&nofb=1&ipt=ad2ca21c03cc890b8e7a49b6a4ac1e91818faf1b7dc0aa4a8caf3522fb243dd7&ipo=images' alt='Eye' />
             </div>
             <div>
                 <input id='loggedInCheckbox' type='checkbox'></input>
@@ -22,15 +23,26 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage, han
     const signUpForm = (<>
         <form>
             <label for='username'>username</label>
-            <input id='username' type='text'></input>
+            <div className='input-container'>
+                <input id='username' type='text'></input>
+            </div>
             <label for='firstname'>first name <span className='subtext'>(optional)</span></label>
-            <input id='firstname' type='text'></input>
+            <div className='input-container'>
+                <input id='firstname' type='text'></input>
+            </div>
             <label for='lastname'>last name <span className='subtext'>(optional)</span></label>
-            <input id='lastname' type='text'></input>
+            <div className='input-container'>
+                <input id='lastname' type='text'></input>
+            </div>
             <label for='email'>email</label>
-            <input id='email' type='text'></input>
+            <div className='input-container'>
+                <input id='email' type='text'></input>
+            </div>
             <label for='password'>password</label>
-            <input id='password' type='text'></input>
+            <div className='password-grid'>
+                <input id='password' type='text'></input>
+                <img src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fpng-file-name-real-eye-1000.png&f=1&nofb=1&ipt=ad2ca21c03cc890b8e7a49b6a4ac1e91818faf1b7dc0aa4a8caf3522fb243dd7&ipo=images' alt='Eye' />
+            </div>
         </form>
     </>);
 

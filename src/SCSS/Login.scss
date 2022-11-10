@@ -8,6 +8,11 @@
 
     form {
         color: $mainBgColor;
+        text-transform: uppercase;
+        font-size: 14px;
+        display: grid;
+        gap: 1em;
+        padding: 40px;
 
         label {
             color: $mainColor;
@@ -16,11 +21,43 @@
         input[type=text] {
             display: block;
             width: 100%;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            padding-inline: 1em;
         }
 
         .subtext {
             text-transform: lowercase;
             opacity: .6;
+            margin: 0 7px
+        }
+
+        .input-container {
+            background-color: white;
+            width: inherit;
+            display: grid;
+            grid-template-columns: auto;
+            align-items: stretch;
+            height: 40px;
+        }
+
+        .password-grid {
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto 40px;
+            align-items: stretch;
+            height: 40px;
+
+            &:nth-child(2) {
+                place-items: center;
+            }
+
+            img {
+                // border: 1px solid purple;
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 
