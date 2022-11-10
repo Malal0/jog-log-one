@@ -88,11 +88,14 @@
             list-style: none;
             display: flex;
             justify-content: space-evenly;
+            margin-block: 30px;
 
             li {
                 border: 1px solid $mainColor;
                 padding: 10px;
                 border-radius: 50%;
+                width: 40px;
+                height: 40px;
 
                 a {
                     color: $mainColor;

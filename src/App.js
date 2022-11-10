@@ -40,6 +40,7 @@ function App() {
     <div className="App">
       {page === 0 ?
         <>
+          <Logo />
           <Login
             form={loginState}
             logInTab={() => setLoginState(true)}
@@ -47,7 +48,6 @@ function App() {
             continueNextPage={() => setPage(1)}
             handleChangeTab={loginState}
           />
-          <Logo />
         </>
         :
         page === 1 ?
