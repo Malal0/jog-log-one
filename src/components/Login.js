@@ -1,6 +1,6 @@
 import '../SCSS/Login.scss'
 
-export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
+export default function Login({ form, logInTab, signUpTab, continueNextPage, handleChangeTab }) {
 
     const loginForm = (<>
         <form>
@@ -34,6 +34,7 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
         </form>
     </>);
 
+
     return (
         <div className='login'>
             <div className="form-container">
@@ -52,8 +53,8 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
                 </ul>
             </div>
             <div className='login-tab-container'>
-                <button onClick={logInTab}>login</button>
-                <button className='active' onClick={signUpTab}>sign up</button>
+                <button className={handleChangeTab ? 'active' : ''} onClick={logInTab}>login</button>
+                <button className={handleChangeTab ? '' : 'active'} onClick={signUpTab}>sign up</button>
             </div>
             <button className='centered-btn' onClick={continueNextPage}>continue as a guest</button>
         </div>

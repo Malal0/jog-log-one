@@ -45,6 +45,7 @@ function App() {
             logInTab={() => setLoginState(true)}
             signUpTab={() => setLoginState(false)}
             continueNextPage={() => setPage(1)}
+            handleChangeTab={loginState}
           />
           <Logo />
         </>
