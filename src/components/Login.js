@@ -1,4 +1,4 @@
-import '../CSS/login.css'
+import '../SCSS/Login.scss'
 
 export default function Login({ form, logInTab, signUpTab, continueNextPage }) {
 

@@ -1,5 +1,5 @@
 import LogoImg from '../images/running-man.svg';
-import '../CSS/logo.css'
+import '../SCSS/Logo.scss'
 
 export default function LogoElement() {
     return (

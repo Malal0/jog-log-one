@@ -31,6 +31,7 @@ function App() {
     }
   }, [holdBtnTimer])
   //timer code
+
   const progressStyle = {
     width: holdBtnTimer * 20 + '%'
   }

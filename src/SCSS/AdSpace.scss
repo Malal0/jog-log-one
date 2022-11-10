@@ -1,5 +1,8 @@
+@import '../Variables/Variables.scss';
+
 .adspace {
     border: 1px solid blue;
+    color: $mainColor;
     display: grid;
     place-items: center;
     height: 73px;

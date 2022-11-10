@@ -1,0 +1,71 @@
+@import '../Variables/Variables.scss';
+
+.login {
+    border: 1px solid yellowgreen;
+    font-weight: 300;
+    width: calc(100% - 2em);
+    margin: 70px 1em;
+
+    form {
+        color: #000000;
+
+        label {
+            color: $mainColor;
+        }
+
+        input[type=text] {
+            display: block;
+            width: 100%;
+        }
+    }
+
+
+    button {
+        color: $mainColor;
+        background-color: $mainBgColor;
+        padding-block: 1em;
+        text-transform: uppercase;
+        font-family: inherit;
+        font-weight: inherit;
+        border-radius: 0;
+        outline: none;
+        border: none;
+    }
+
+    .form-container {
+        border: 1px solid pink;
+        background-color: #141414;
+        width: 100%;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .or-container {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            opacity: .5;
+
+            hr {
+                display: block;
+                width: 100%;
+            }
+
+            p {
+                padding: 1em;
+            }
+
+            &>* {
+                place-self: center;
+                color: $mainColor;
+            }
+        }
+    }
+
+    .login-tab-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

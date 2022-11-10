@@ -1,4 +1,4 @@
-import '../CSS/records.css'
+import '../SCSS/Records.scss'
 
 export default function Records() {
     return (

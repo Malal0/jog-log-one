@@ -1,4 +1,4 @@
-import '../CSS/adspace.css'
+import '../SCSS/AdSpace.scss'
 
 export default function AdSpace() {
     return (

@@ -1,0 +1,19 @@
+@import '../Variables/Variables.scss';
+
+.logoElement {
+    border: 1px solid white;
+    color: $mainColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 38px;
+        width: 38px;
+        object-fit: contain;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+}

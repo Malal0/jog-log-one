@@ -1,0 +1,12 @@
+@import '../Variables/Variables.scss';
+
+.timer {
+    border: 1px solid purple;
+
+    .progress-bar {
+        width: 0px;
+        height: 20px;
+        background-color: #829dff;
+        transition: 250ms;
+    }
+}

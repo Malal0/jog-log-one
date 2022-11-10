@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import '../CSS/timer.css'
+import '../SCSS/Timer.scss'
 
 export default function Timer({ handleMouseDown, handleMouseUp, holdBtnTime, handleStyle }) {
     const [mainTimer, setMainTimer] = useState({ min: 0, sec: 0 });
