@@ -45,6 +45,17 @@
             list-style: none;
             display: flex;
             justify-content: space-evenly;
+
+            li {
+                border: 1px solid $mainColor;
+                padding: 10px;
+                border-radius: 50%;
+
+                a {
+                    color: $mainColor;
+                    text-decoration: none;
+                }
+            }
         }
 
         .or-container {
