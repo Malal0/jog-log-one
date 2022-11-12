@@ -27,7 +27,9 @@ export default function Timer({ handleMouseDown, handleMouseUp, holdBtnTime, han
                     <h2>seconds</h2>
                     <h1>
                         {mainTimer.min < 10 ? '0' + mainTimer.min : mainTimer.min}
-                        :
+                    </h1>
+                    <div>:</div>
+                    <h1>
                         {mainTimer.sec < 10 ? '0' + mainTimer.sec : mainTimer.sec}
                     </h1>
                 </div> :
