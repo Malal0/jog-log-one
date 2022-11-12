@@ -22,7 +22,7 @@ export default function Timer({ handleMouseDown, handleMouseUp, holdBtnTime, han
     return (
         <div className="timer">
             {beginRun ?
-                <div>
+                <div className="timer-grid">
                     <h2>minutes</h2>
                     <h2>seconds</h2>
                     <h1>
