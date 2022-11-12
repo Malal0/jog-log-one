@@ -5,11 +5,20 @@
     display: grid;
     align-self: center;
 
+    button {
+        aspect-ratio: 1;
+        width: 3em;
+        margin: auto;
+        background-color: transparent;
+        color: $mainColor;
+        border: 1px solid $mainColor;
+        border-radius: 50%;
+    }
 
     .progress-bar {
         width: 0px;
         height: 20px;
-        background-color: #829dff;
+        background-color: $mainColor;
         transition: 250ms;
     }
 }
