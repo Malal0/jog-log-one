@@ -2,6 +2,9 @@
 
 .timer {
     border: 1px solid purple;
+    display: grid;
+    align-self: center;
+
 
     .progress-bar {
         width: 0px;
