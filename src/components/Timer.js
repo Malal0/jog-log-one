@@ -23,13 +23,13 @@ export default function Timer({ handleMouseDown, handleMouseUp, holdBtnTime, han
         <div className="timer">
             {beginRun ?
                 <div className="timer-grid">
-                    <h2>minutes</h2>
-                    <h2>seconds</h2>
-                    <h1>
+                    <label>minutes</label>
+                    <label>seconds</label>
+                    <h1 className="number">
                         {mainTimer.min < 10 ? '0' + mainTimer.min : mainTimer.min}
                     </h1>
                     <div>:</div>
-                    <h1>
+                    <h1 className="number">
                         {mainTimer.sec < 10 ? '0' + mainTimer.sec : mainTimer.sec}
                     </h1>
                 </div> :

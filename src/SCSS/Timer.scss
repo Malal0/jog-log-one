@@ -20,6 +20,10 @@
         grid-template-columns: 1fr 2ch 1fr;
         grid-template-rows: 2em auto;
 
+        .number {
+            font-size: 128px;
+        }
+
         &>* {
             align-items: center;
             align-self: center;
@@ -29,14 +33,12 @@
         &>:nth-child(2) {
             grid-column: 3;
             grid-row: 1;
-            // font-size: 4em;
             margin: auto;
         }
 
         &>:nth-child(3) {
             grid-column: 1 / 2;
             grid-row: 2 / 3;
-            font-size: 4em;
             margin: auto;
         }
 
@@ -50,7 +52,6 @@
         &>:nth-child(5) {
             grid-column: 3 / 4;
             grid-row: 2 / 3;
-            font-size: 4em;
             margin: auto;
         }
     }
