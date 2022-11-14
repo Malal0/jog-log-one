@@ -5,14 +5,21 @@
     display: grid;
     align-self: center;
 
-    button {
+    .play-pause-btn {
         aspect-ratio: 1;
-        width: 3em;
+        width: 3.75em;
+        padding: 5px;
         margin: auto;
         background-color: transparent;
-        color: $mainColor;
-        border: 1px solid $mainColor;
+        color: white;
+        border: 1px solid white;
         border-radius: 50%;
+
+        img {
+            --size: 100%;
+            height: var(--size);
+            width: var(--size);
+        }
     }
 
     .timer-grid {

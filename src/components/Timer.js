@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
 import '../SCSS/Timer.scss'
+import pauseIcon from '../images/pause.svg'
+import playIcon from '../images/play.svg'
 
 export default function Timer({ handleMouseDown, handleMouseUp, holdBtnTime, handleStyle }) {
     const [mainTimer, setMainTimer] = useState({ min: 0, sec: 0 });
@@ -36,10 +38,13 @@ export default function Timer({ handleMouseDown, handleMouseUp, holdBtnTime, han
                 <h1>begin run</h1>
             }
             <button
+                className="play-pause-btn"
                 onClick={() => { setTimerOn(!timerOn); setBeginRun(true) }}
                 onMouseDown={handleMouseDown}
                 onMouseUp={handleMouseUp}
-            >| |</button>
+            >
+                <img src={timerOn ? pauseIcon : playIcon} alt='play-pause-btn' />
+            </button>
             <p>press here</p>
             <div className="progress-bar" style={handleStyle}>
                 {holdBtnTime < 10 ? '0' + holdBtnTime : holdBtnTime}s
