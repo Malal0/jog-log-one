@@ -19,6 +19,7 @@
             --size: 100%;
             height: var(--size);
             width: var(--size);
+            pointer-events: none;
         }
     }
 
@@ -73,5 +74,12 @@
         height: 20px;
         background-color: $mainColor;
         transition: 250ms ease-out;
+    }
+
+    .text {
+        width: fit-content;
+        margin: auto;
+        padding-block: 29px;
+        text-transform: uppercase;
     }
 }
