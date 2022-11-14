@@ -1,4 +1,4 @@
-import LogoImg from '../images/running-man.svg';
+// import LogoImg from '../images/running-man.svg';
 import '../SCSS/Logo.scss'
 
 export default function LogoElement() {
