@@ -3,4 +3,7 @@
 .records {
     border: 1px solid red;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    max-height: 261px;
 }
