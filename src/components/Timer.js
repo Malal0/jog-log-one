@@ -47,7 +47,7 @@ export default function Timer({ handleMouseDown, handleMouseUp, holdBtnTime, han
             </button>
             <p className="text">{beginRun ? 'press down to end run' : 'press here'}</p>
             <div className="progress-bar" style={handleStyle}>
-                {holdBtnTime < 10 ? '0' + holdBtnTime : holdBtnTime}s
+                {/* {holdBtnTime < 10 ? '0' + holdBtnTime : holdBtnTime}s */}
             </div>
         </div>
     )
