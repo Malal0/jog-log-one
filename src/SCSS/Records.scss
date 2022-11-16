@@ -6,4 +6,24 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(9, 1fr);
     max-height: 261px;
+
+    .edit-btn {
+        grid-column: 1;
+    }
+
+    .view-btn {
+        grid-column: 3;
+    }
+
+    .date-lbl {
+        grid-column: 1;
+    }
+
+    .distance-lbl {
+        grid-column: 2;
+    }
+
+    .time-lbl {
+        grid-column: 3;
+    }
 }
