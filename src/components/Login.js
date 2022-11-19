@@ -1,5 +1,7 @@
 import '../SCSS/Login.scss'
-import eye from '../images/eye.svg'
+import facebookLogo from '../images/facebook.svg'
+import twitterLogo from '../images/twitter.svg'
+import googleLogo from '../images/google.svg'
 
 export default function Login({ form, logInTab, signUpTab, continueNextPage, handleChangeTab }) {
 
@@ -13,7 +15,6 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage, han
             <div className='password-grid'>
                 <input id='password' type='text'></input>
                 <button className='eye'></button>
-                {/* <img src={eye} alt='Eye' /> */}
             </div>
             <div>
                 <input id='loggedInCheckbox' type='checkbox'></input>
@@ -44,7 +45,6 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage, han
             <div className='password-grid'>
                 <input id='password' type='text'></input>
                 <button className='eye'></button>
-                {/* <img src={eye} alt='Eye' /> */}
             </div>
         </form>
     </>);
@@ -61,9 +61,9 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage, han
                     <hr />
                 </div>
                 <ul>
-                    <li><a href='https://www.facebook.com/' target='_blank' rel="noreferrer">f</a></li>
-                    <li><a href='https://twitter.com/' target='_blank' rel="noreferrer">t</a></li>
-                    <li><a href='https://www.google.com/' target='_blank' rel="noreferrer">g</a></li>
+                    <li><button><img src={facebookLogo} alt='facebook login' /></button></li>
+                    <li><button><img src={twitterLogo} alt='twitter login' /></button></li>
+                    <li><button><img src={googleLogo} alt='google login' /></button></li>
                 </ul>
             </div>
             <div className='login-tab-container'>
