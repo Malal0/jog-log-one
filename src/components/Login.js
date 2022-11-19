@@ -42,7 +42,7 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage, han
             <label for='password'>password</label>
             <div className='password-grid'>
                 <input id='password' type='text'></input>
-                <img src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fpng-file-name-real-eye-1000.png&f=1&nofb=1&ipt=ad2ca21c03cc890b8e7a49b6a4ac1e91818faf1b7dc0aa4a8caf3522fb243dd7&ipo=images' alt='Eye' />
+                <img src={eye} alt='Eye' />
             </div>
         </form>
     </>);
