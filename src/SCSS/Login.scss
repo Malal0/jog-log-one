@@ -58,6 +58,18 @@
                 height: 100%;
                 width: 100%;
             }
+
+            .eye {
+                background-color: $mainColor;
+                mask-image: url(../images/eye.svg);
+                mask-repeat: no-repeat;
+                mask-position: center;
+                filter: saturate(0);
+
+                &:hover {
+                    filter: saturate(1);
+                }
+            }
         }
     }
 

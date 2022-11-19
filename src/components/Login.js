@@ -12,7 +12,8 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage, han
             <label for='password'>password</label>
             <div className='password-grid'>
                 <input id='password' type='text'></input>
-                <img src={eye} alt='Eye' />
+                <button className='eye'></button>
+                {/* <img src={eye} alt='Eye' /> */}
             </div>
             <div>
                 <input id='loggedInCheckbox' type='checkbox'></input>
@@ -42,7 +43,8 @@ export default function Login({ form, logInTab, signUpTab, continueNextPage, han
             <label for='password'>password</label>
             <div className='password-grid'>
                 <input id='password' type='text'></input>
-                <img src={eye} alt='Eye' />
+                <button className='eye'></button>
+                {/* <img src={eye} alt='Eye' /> */}
             </div>
         </form>
     </>);
